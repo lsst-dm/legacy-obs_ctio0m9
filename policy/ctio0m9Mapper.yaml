@@ -329,6 +329,10 @@ datasets:
         persistable:        "PropertySet"
         storage:    "YamlStorage"
         tables:        raw
+    runIsr_metadata:
+        template: "runIsr_metadata/v%(visit)d_f%(filter)s.yaml"
+    characterizeImage_metadata:
+        template: "characterizeImage_metadata/%(visit)d_f%(filter)s.yaml"
     transformSrcMeasurement_config:
         template:      "config/transformSrcMeasurement.py"
         python:        "lsst.pipe.tasks.transformMeasurement.RunTransformConfig"

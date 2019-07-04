@@ -120,7 +120,15 @@ class Ctio0m9Mapper(CameraMapper):
                            'NONE+z',
                            'NONE+f5025/1023',
                            'RG715+RONCHI200',
-                           'FGB37+RONCHI200'
+                           'FGB37+RONCHI200',
+                           'RONCHI400+cb',
+                           'RONCHI400+f5025/1023',
+                           'Thor300+f5025/1023',
+                           'HoloPhP+f5025/1023',
+                           'HoloPhAg+f5025/1023',
+                           'HoloAmAg+f5025/1023',
+                           'HoloAmAg+cb',
+                           'Halfa+NONE',
                            ]
 
         # default no-filter name used for biases and darks - must appear
