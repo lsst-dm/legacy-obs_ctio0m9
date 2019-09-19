@@ -17,6 +17,8 @@ config.charImage.repair.cosmicray.nCrPixelMax = 100000
 config.calibrate.photoRefObjLoader.ref_dataset_name = "gaia_DR1_v1"
 config.calibrate.astromRefObjLoader.ref_dataset_name = "gaia_DR1_v1"
 config.charImage.refObjLoader.ref_dataset_name = "gaia_DR1_v1"
+config.calibrate.connections.astromRefCat = "gaia_DR1_v1"
+config.calibrate.connections.photoRefCat = "gaia_DR1_v1"
 
 # Create a filterMap for all known filters to the one Gaia "filter"
 for refObjLoader in (config.calibrate.astromRefObjLoader,
