@@ -1,8 +1,6 @@
 import os.path
 from lsst.utils import getPackageDir
 
-config.load(os.path.join(getPackageDir("obs_lsst"), "config", "auxTel", "auxTel.py"))
-
 # Configuration for processStarTask
 
 # we currently have no calibration products for this camera, so disable most isr
