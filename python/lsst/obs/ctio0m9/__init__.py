@@ -19,6 +19,11 @@
 # the GNU General Public License along with this program.  If not,
 # see <http://www.lsstcorp.org/LegalNotices/>.
 #
+import warnings
+
+warnings.warn('lsst.obs.ctio0m9 is deprecated; it will be removed from the Rubin Observatory'
+              'Science Pipelines after release 21.0.0', category=FutureWarning)
+
 from .version import *
 from .ctio0m9 import *
 from .ctio0m9Mapper import *
