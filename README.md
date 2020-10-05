@@ -1,6 +1,8 @@
 # obs_ctio0m9
 A repository to hold the description for ctio0m9
 
+*Warning:* This package is deprecated, and will be removed from the Rubin Observatory Science Pipelines distribution after release 21.0.0.
+
 The data taking at this site was not fully automated, and so some header keywords are known to be unreliable.
 Some of these are standardised during ingest by the obs_package (e.g. normalisation of filter naming,
 ensuring the DATE-OBS keyword is ISO8601 compliant etc). However, some things are, by necessity, done
