@@ -258,6 +258,20 @@ class Ctio0m9Mapper(CameraMapper):
             exp.getInfo().setVisitInfo(afwImage.VisitInfo(darkTime=1.0))
         return exp
 
+    def _setFilter(self, mapping, item, dataId):
+        """To ensure that ctio0m9 exposures get both physical and band set.
+
+        Notes
+        -----
+        ctio0m9 has very non-typical filters, and uses the physical filter
+        name in the refcat loader filterMap, so we want to duplicate the
+        physical name into the band name here. These filters don't have a
+        standard "band" like "g", so these band names won't get confused
+        with anything else.
+        """
+        idFilter = mapping.need(['filter'], dataId)['filter']
+        item.setFilterLabel(afwImage.FilterLabel(physical=idFilter, band=idFilter))
+
 
 def sanitize_date(md):
     '''Take a metadata object, fix corrupted dates in DATE-OBS field, and
